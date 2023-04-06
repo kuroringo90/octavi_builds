@@ -41,7 +41,7 @@ jobs:
             echo "::set-output name=date::$(date +'%Y-%m-%d--%H-%M-%S')"
         - name: Clean Workspace
           run: | 
-            rm -f ${GITHUB_WORKSPACE}/*.*
+            rm -rf ${GITHUB_WORKSPACE}/*.*
         - name: Clean Strategy
           run: | 
            cd ~/octavi/
